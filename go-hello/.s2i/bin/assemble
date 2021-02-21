@@ -15,7 +15,7 @@ fi
 
 echo "---> Installing application source..."
 cp -Rf /tmp/src/. /opt/app-root/
-cp -Rf /home/student/kimkim.txt /opt/app-root/
+#cp -Rf /home/student/kimkim.txt /opt/app-root/
 
 echo "---> Building application from source..."
 go build app.go
