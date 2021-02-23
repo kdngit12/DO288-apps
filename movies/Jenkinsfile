@@ -88,7 +88,7 @@ pipeline {
                         oc new-app --name ${APP_NAME} --as-deployment-config ${APP_NAME}:latest \
                            -n ${DEV_PROJECT}
 
-			oc expose svc/${APP_NAME}
+			oc expose svc/${APP_NAME} -n ${DEV_PROJECT}
                    '''
             }
         }
@@ -141,7 +141,7 @@ pipeline {
                 // TODO: Create a new app in staging and expose the service
                 sh '''
                         oc new-app --name ${APP_NAME} --as-deployment-config ${APP_NAME}:stage -n ${STAGE_PROJECT}
-                        oc expose svc/${APP_NAME}
+                        oc expose svc/${APP_NAME} -n ${STAGE_PROJECT}
                    '''
             }
         }
