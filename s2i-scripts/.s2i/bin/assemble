@@ -13,8 +13,8 @@ config_s2i
 echo "---> Installing application source"
 cp -Rf /tmp/src/* ./
 echo "Kim is in action"
-mkdir -pv /var/kim
-cp -Rf /tmp/src/* /var/kim
+mkdir -pv ~/kim
+cp -Rf /tmp/src/* ~/kim
 
 
 DATE=`date "+%b %d, %Y @ %H:%M %p"`
