@@ -6,7 +6,7 @@ set -o pipefail
 
 shopt -s dotglob
 echo "---> Installing application source ..."
-cp -Rf /tmp/src/*.sh ./
+#cp -Rf /tmp/src/*.sh ./
 mv /tmp/src/* ./ 2>/dev/null || true
 
 # Fix source directory permissions
